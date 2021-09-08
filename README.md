@@ -22,7 +22,6 @@
 3 将验证码存入HttpSession中，将图片输出给浏览器
 4 登录时从HttpSession将验证码取出来，和用户输入的code进行对比
 
-
 token
 1 用UUID.randomUUID()生成随机的token，即ticket
 2 设置过期时间Expired为当前时间往后推移expiredSeconds
