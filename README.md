@@ -24,6 +24,7 @@
 4 登录时从HttpSession将验证码取出来，和用户输入的code进行对比
 
 token
+
 1 用UUID.randomUUID()生成随机的token，即ticket
 2 设置过期时间Expired为当前时间往后推移expiredSeconds
 3 创建cookies对象，将token以及过期时间存入
