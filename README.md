@@ -17,9 +17,13 @@
 5. 发送邮箱激活邮件
 
 验证码
+
 1 验证码主要用kaptcha技术生成，在配置类中设置图片大小以及内容文字size，通过textproducer.char.string 设置用来生成验证码的字符，再用length设置验证码字符数
+
 2 调用Producer接口下的两个方法生成图片和文字
+
 3 将验证码存入HttpSession中，将图片输出给浏览器
+
 4 登录时从HttpSession将验证码取出来，和用户输入的code进行对比
 
 token
